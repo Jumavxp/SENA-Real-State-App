@@ -1,11 +1,19 @@
-import HomeHeader from "../components/HomeHeader"
+import HomeHeader from "../components/HomeHeader";
+import MapComponent from "../components/MapComponent";
+import SearchBar from "../components/SearchBar";
 
-function HomePage(){
-    return (
+function HomePage() {
+  return (
     <>
-    <HomeHeader/>
-    <h1>Hola Mundo</h1>
+      <HomeHeader />
+      <SearchBar />
+      <h1>Ubicaion en el mapa</h1>
+      <MapComponent
+        whenReady={() => {
+          alert("ready");
+        }}
+      />
     </>
-)
+  );
 }
-export default HomePage
+export default HomePage;
