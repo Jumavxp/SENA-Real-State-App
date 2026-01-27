@@ -8,11 +8,7 @@ function HomePage() {
       <HomeHeader />
       <SearchBar />
       <h1>Ubicaion en el mapa</h1>
-      <MapComponent
-        whenReady={() => {
-          alert("ready");
-        }}
-      />
+      <MapComponent />
     </>
   );
 }

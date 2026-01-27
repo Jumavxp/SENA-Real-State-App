@@ -1,9 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
+/* Header Styles  */
+.homeHeader {
+  height: 50px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #abc666;
+}
+.homeLogo {
+}
+.homeLogin {
+}
+
+/* Components */
+.searchBar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid black;
+}
+.categories {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .mapComponent {
   overflow: hidden;
+  max-width: 80%;
+  height: 500px;
+  margin: auto;
 }

@@ -1,9 +1,9 @@
-import { MapContainer } from "react-leaflet/MapContainer";
-import { TileLayer } from "react-leaflet/TileLayer";
-import { Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 const MapComponent = () => {
   const position = [4.814, -75.694];
+
   return (
     <MapContainer
       center={position}
@@ -11,11 +11,12 @@ const MapComponent = () => {
       scrollWheelZoom={false}
       className="mapComponent"
       dragging={true}
-      style={{ height: "500px", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        maxZoom={19}
+        subdomains={["a", "b", "c"]}
       />
 
       <Marker position={position}>
