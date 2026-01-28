@@ -1,3 +1,4 @@
+import CardContainer from "../components/CardContainer";
 import HomeHeader from "../components/HomeHeader";
 import MapComponent from "../components/MapComponent";
 import SearchBar from "../components/SearchBar";
@@ -9,6 +10,7 @@ function HomePage() {
       <SearchBar />
       <h1>Ubicaion en el mapa</h1>
       <MapComponent />
+      <CardContainer title={"Casas en venta"} />
     </>
   );
 }

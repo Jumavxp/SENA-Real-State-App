@@ -2,11 +2,11 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const MapComponent = () => {
-  const position = [4.814, -75.694];
+  const center = [4.814, -75.694];
 
   return (
     <MapContainer
-      center={position}
+      center={center}
       zoom={13}
       scrollWheelZoom={false}
       className="mapComponent"
@@ -19,7 +19,7 @@ const MapComponent = () => {
         subdomains={["a", "b", "c"]}
       />
 
-      <Marker position={position}>
+      <Marker position={center}>
         <Popup>A cute Message :D</Popup>
       </Marker>
     </MapContainer>
